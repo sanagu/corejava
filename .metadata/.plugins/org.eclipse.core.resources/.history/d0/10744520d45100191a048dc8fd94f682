@@ -1,0 +1,5 @@
+package com.capgemini.bankapp.current;
+
+public class CurrentBankAccount {
+
+}

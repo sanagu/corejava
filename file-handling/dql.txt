@@ -1,0 +1,157 @@
+1.	Display all departments from department table.
+        select * from departments;
+
+2.	Display all employees from employee table.
+        select * from employees;
+
+3.	Select the employee in department 30.
+        select * from employees where department_id = 30;
+
+    
+4.	List the names, numbers and departmentno of all clerks.
+        select first_name,last_name,department_id  from employees where job_id  like  "%CLERK%";
+
+5.	Find the depart numbers and the name of employee of all dept with Deptno greater or equal to 20.
+         select department_id,first_name,last_name from employees where department_id >= 20;
+
+6.	Find the employees whose commission is greater than their salary.
+7.	Find the employees whose commission is greater than 60 percent of their salary.
+8.	Find the employee whose commission is greater than 50 percent of their salary.
+9.	List the name, job and salary of all employees in dept 20 who earn more than 2000.
+         select first_name,last_name,job_id,salary from employees where department_id = 20 and salary > 2000;
+
+10.	Find all salesmen in dept 30 whose salary is greater than or equal to Rs. 1500.
+        select * from employees where job_id like '%man%' and department_id = 30 and salary >= 1500;
+
+11.	Find all the employees whose job is either a president or manager.
+         select * from employees where job_id like '%mgr%' or job_id like '%pres%';
+
+12.	Find all managers who are not in dept 30.
+         select * from employees where (job_id like '%man%' or job_id like '%mgr%') and department_id != 30 ;
+
+13.	Find the details of all managers and clerks in dept 10.
+        select * from employees where (job_id like '%man%' or job_id like '%mgr%'or job_id like '%clerk%') and department_id = 10 ;
+
+14.	Find the details of all manager (in any dept) and all clerks in dept 10
+        select * from employees where (job_id like '%man%' or job_id like '%mgr%') or (job_id like '%clerk%' and department_id = 10 );
+	
+15.	Find the details of all managers in dept 10 and all clerks in dept 20.
+        select * from employees where (job_id like '%man%' or job_id like '%mgr%') and department_id = 10 or (job_id like '%clerk%' and department_id = 20 );
+
+16.	Find all employees who are neither clerks nor manager but whose salary is greater than or equal to Rs. 2000.
+        select * from employees where !(job_id  like '%man%' or job_id like '%mgr%' or job_id like '%clerk%' )and salary >= 2000;
+
+17.	Find the employees who earns between Rs. 1200 and Rs.1400.
+        select * from employees where salary between 1200 and 1400;
+
+18.	Find the employees who are clerks, analysts or salesman.
+         select * from employees where (job_id like '%clerk%' or job_id like 'sa%');
+
+19.	Find the employees who are not clerks, analyst or salesman.
+         select * from employees where !(job_id like '%clerk%' or job_id like 'sa%');
+
+20.	Find the employees who do not receive a commission i.e. commission is NULL.
+         select * from employees where commission_pct is null;
+
+
+21.	Find the employee whose commission is Rs. 0.
+         select * from employees where commission_pct = 0;
+
+22.	Find the different jobs of the employees receiving commission.
+        select * from employees where commission_pct is not null;
+
+23.	Find all employees who do not receive a commission or whose Commission is less than Rs. 100. 
+        select * from employees where (commission_pct is null or commission_pct *salary < 1000);
+
+24.	The employees who not receiving commission are entailed to Rs. 250, Show the net earnings of all employees. (find about nvl() )
+        select first_name
+25.	Find all employees whose total earnings are greater than Rs. 2000.
+26.	Find all employees whose names begin with m.
+         select first_name from employees where first_name like 'm%';
+
+27.	Find all employees whose names end with m.
+        select first_name from employees where first_name like '%m';
+
+28.	Find all employees whose names contain the letter m.
+        select first_name from employees where first_name like '%m%';
+
+29.	Find the employees whose names are 5 characters long and end with n.
+        select first_name from employees where first_name like '____n';
+
+30.	Find the employees who have the letter r as the third letter in their name.
+        select first_name from employees where first_name like '__r%';
+
+2)	Numeric, Character & Date Function 
+31.	Find all employees hired in month of February (of any year).
+        select * from employees where hire_date like '%-02-%';
+
+32.	Find all employees who were hired on the last day of the month.
+        select first_name from employees where hire_date=last_day(hire_date);
+ 
+33.	Find the employees who were hired more than 12 years ago.
+        select * from employees where year(hire_date) < 2007;
+
+34.	Find the managers hired in the year 2007.
+        select * from employees where year(hire_date) = 2007;
+
+35.	Display the names and the jobs of all employees, separated by ','(comma). For example (smith, clerk).
+         select concat(job_id,',',first_name) the_output from employees;
+
+36.	Display the names of all employees with the initial letter only in capitals.
+        update employees set first_name=concat(ucase(left(first_name,1)),substring(first_name,2));
+
+37.	Display the names of all employees, right aligning them to 15 characters.
+         select lpad(first_name,15,' ') from employees;
+
+38.	Display the names of all employees, padding them to right up-to 15 characters with '-'.
+        select rpad(first_name,15,'_') from employees;
+
+39.	Display the length of the name of all employees.
+         select length(first_name) from employees;
+
+40.	Display the names of all employees centering them with 20 characters.
+41.	Display the names of all employees without any leading 'a'.
+          select first_name from employees where first_name not like 'a%';
+
+42.	Display the names of all employees without any trailing 'r'.
+        select first_name from employees where first_name not like '%r';
+
+43.	Show the first three characters of the names of all employees.
+        select substring(first_name,1,3) from employees ;
+
+44.	Show the last three characters of the names of all employees.
+         select substring(first_name,-3) from employees;
+
+45.	Display the names of all employees replacing any 'a' with 'e'.
+         select replace(first_name,'a','e') from employees;
+
+46.	Display the names of all employees and the position at which the string 'ar' occurs in the name.
+         select position('ar' in first_name),first_name from employees;
+
+47.	Show the salary of all employees rounding it to the nearest Rs. 1000. For example (3790 will be 4000)
+         select round(salary,-3) from employees;
+
+48.	Show the daily salary of all employees assuming a month has 30 days.
+         select salary/30 from employees;
+
+49.	Display the name of all employees, and their bonus. Assume each Employee gets a bonus of 20 percent of his salary subject to the Maximum of Rs. 500.
+         select if ((0.2*salary)<500,0.2*salary,500) "bonus" from employees;
+
+50.	Display the name of all employees, and their bonus. Assume each employee gets a bonus of 20 percent of his salary subject to the Maximum of Rs. 200.
+        select if ((0.2*salary)<200,0.2*salary,200) "bonus" from employees;
+
+51.	For each employee display the number of days passed since the employee joined the company.
+52.	For each employee display the number of months passed since the Employee joined the company.
+53.	Display the tenure of service in the years, months and days for all Employees in character format. Assume every month has 30 days.
+54.	Display the employee details in the following manner. 'Miler joined on the twenty-third of January of the year nineteen hundred and eighty Two'.
+
+3)	Ordering by Queries
+55.	Display the details of all employees, sorted on the names.
+56.	Display the name of all employees, based on their tenure, with the oldest employee coming first.
+57.	Display the names, job and salary of all employees sorted on jobs and Salary.
+58.	Display the names, job and salary of all employees, sorted on jobs and within job, sorted on the descending order of salary.
+59.	Display the names, job and salary of all employees, sorted on Descending order of job and within job, sorted on the descending order of salary.
+60.	 Display the name, month and year of all employees, sorted on the month of their hire date irrespective of the year.
+61.	Display the name, month and year of joining of all employees, sorted on the month of their hire date, and within that on the year, with the earliest year appearing first.
+
+

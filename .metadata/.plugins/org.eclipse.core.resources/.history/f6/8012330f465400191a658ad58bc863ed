@@ -1,0 +1,70 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+	<form>
+  <div class="container-fluid  bg-info">
+    <img src="LOGO.PNG" class="img-fluid" alt="Responsive image">
+  </div>
+
+  <div class="container-fluid  bg-secondary">
+    <div class="card text-center bg-secondary">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="new_Account.html" target="frame">Open New Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="New_withdraw.html" target="frame">Withdraw Form</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="New-Deposit.html" target="frame">Deposit Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="Newfund_Transfer.html" target="frame">Fund Transfer Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="CheckBalance.html" target="frame">Check Balance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="getAllBankAccounts.do" target="frame">Display All Account Details Form</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link active" name="frame" href="seaechAccount.html" target="frame">search Account Form</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link active" name="frame" href=" deleteAccount.html" target="frame"> deleteAccount form</a>
+                  </li>
+        </ul>
+      </div>
+
+    </div>
+    
+
+  </div>
+
+    </div>
+  </div>
+<div style="background-color: grey">
+ <iframe src="" width="100%" height="500" scrolling="no" name="frame" id="frame"></iframe>
+ 
+  
+  </iframe>
+  </div>
+	</form>
+</body>
+
+</html>

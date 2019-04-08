@@ -1,0 +1,5 @@
+package com.capgemini.bankapp.banktest;
+
+public class BankAccountTest {
+
+}

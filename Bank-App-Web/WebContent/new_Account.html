@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<form action="addNewBankAccount.do" method="post">
+  <div style="background-color:grey">
+  <h2 style="margin-left:500px">
+    Create New Account
+  </h2>
+  <form style="margin-left:20%;margin-right:20%;margin-top:5%">
+    <label for="validationServer01">accountHolderName</label>:</label>
+    <input type="text" class="form-control is-valid" id="validationServer01" name="accountHolderName" placeholder="Customer name" required>
+     <br></br>
+
+     <label for="validationServer01" >AccountType:</label>
+                    <div class="accountType"  >
+                            <div >
+                              <select class="form-control is-valid" name="accountType">
+                                  <option>--select--</option>
+                                  <option>Saving</option>
+                                  <option>Current</option>
+                              </select>
+                             
+                            </div>
+                          </div>
+                          <br></br>
+                          <form style="margin-left:20%;margin-right:20%;margin-top:5%">
+                                <label for="validationServer01">Account Balance</label>:</label>
+                                <input type="number" class="form-control is-valid" id="validationServer01" name="accountBalance" placeholder="Account Balance" required>
+                        <br></br>
+
+                        <button type="submit" class="btn btn-primary" style="margin-left:350px">Open Account</button>
+  </form>
+</div>
+</body>
+
+</html>

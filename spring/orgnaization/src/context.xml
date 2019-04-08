@@ -1,0 +1,60 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+<context:property-placeholder location="classpath:dbUtil.properties"/>
+
+<bean id = "details" class = "com.capgemini.spring.organization.Organization">
+        <constructor-arg value = "1" type="int"/>
+        <constructor-arg value = "capgemini" type="String"/>
+        <constructor-arg value = "250000" type="double"/>
+
+<constructor-arg ref="address"/>
+
+<constructor-arg>
+<list>
+<value>"hr"</value>
+  <value>"admin"</value>
+</list>
+</constructor-arg>
+
+<constructor-arg >
+<set>
+<value>"IT"</value>
+  <value>"support"</value>
+</set>
+</constructor-arg>
+
+<constructor-arg>
+<map>
+<entry key="hr" value="joe"/>
+  <entry key="admin" value="james"/>
+</map>
+</constructor-arg>
+
+<constructor-arg>
+          <props>
+            <prop key = "admin">192.10.10.11</prop>
+            <prop key = "dbPassword">192.11.11.11</prop>
+          </props>
+      </constructor-arg>
+
+
+<constructor-arg>
+          <props>
+            <prop key = "dbUser">${dbUtil.user}</prop>
+            <prop key = "dbPassword">${dbUtil.password}</prop>
+          </props>
+      </constructor-arg>
+
+</bean>
+<bean id = "address" class = "com.capgemini.spring.organization.address.Address">
+<constructor-arg index = "0" value = "mumbai"/>
+         <constructor-arg index = "1" value = "maharastra"/>
+<constructor-arg index = "2" value = "india" />
+    </bean>     
+
+</beans>

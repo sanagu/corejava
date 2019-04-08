@@ -1,0 +1,7 @@
+
+Apr 01, 2019 21:25:17.30 NEW SESSION
+Apr 01, 2019 21:25:17.30 [5596:28356:0401/212517.293:ERROR:dns_config_service_win.cc(751)] DNS config watch failed.
+Apr 02, 2019 08:49:04.16 [5596:31484:0402/084904.161:ERROR:browser_process_sub_thread.cc(209)] Waited 13 ms for network service
+Apr 02, 2019 10:22:17.44 [30324:31364:0402/102217.444:ERROR:dns_config_service_win.cc(751)] DNS config watch failed.
+Apr 02, 2019 14:34:32.23 [30324:27336:0402/143432.231:ERROR:browser_process_sub_thread.cc(209)] Waited 20 ms for network service
+Apr 02, 2019 14:35:27.06 [29856:30028:0402/143527.069:ERROR:browser_process_sub_thread.cc(209)] Waited 49 ms for network service

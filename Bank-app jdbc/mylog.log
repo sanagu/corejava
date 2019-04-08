@@ -1,0 +1,48 @@
+2019-03-27 12:22:54,202[yyyy-MM-dd HH:mm:ss]-5 -[main] ERROR BankAccountClient.class -Exception:
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:34)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:53)
+2019-03-27 12:24:08,249[yyyy-MM-dd HH:mm:ss]-0 -[main] ERROR BankAccountClient.class -Exception:
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:34)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:53)
+2019-03-27 12:36:04-0 -[main] ERROR BankAccountClient.class -Exception:
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:34)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:54)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:77)
+2019-03-27 12:36:32-27791 -[main] ERROR BankAccountClient.class -Exception:
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:34)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:54)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:77)
+2019-03-27 14:14:13-0 -[main] ERROR BankAccountClient.class -Exception:
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:34)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:54)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:77)
+2019-03-27 18:58:00-0 -[main] ERROR BankAccountClient.class -Exception:
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:34)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:54)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:77)
+2019-03-28 11:45:44-1 -[main] ERROR com.capgemini.bankapp.util.DbUtil -Exception
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:45)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:87)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:78)
+2019-03-28 11:45:44-6 -[main] ERROR BankAccountClient.class -Exception:
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:45)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:87)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:78)
+2019-03-28 11:48:31-0 -[main] ERROR com.capgemini.bankapp.util.DbUtil -Exception
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:45)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:87)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:78)
+2019-03-28 11:48:31-7 -[main] ERROR BankAccountClient.class -Exception:
+com.capgemini.bankapp.exception.LowBalanceException: You don't have sufficient funds
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:45)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:87)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:78)

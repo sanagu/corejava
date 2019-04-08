@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+  <div class="container-fluid  bg-info">
+    <img src="LOGO.PNG" class="img-fluid" alt="Responsive image">
+  </div>
+
+  <div class="container-fluid  bg-secondary">
+    <div class="card text-center bg-secondary">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="TimesOfIndia.html" target="frame">Open New Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="EconomicTimes.html" target="frame">Withdraw Form</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="MaharastraTimes.html" target="frame">Deposit Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="DNA.html" target="frame">Fund Transfer Form</a>
+          </li>
+        
+        </ul>
+      </div>
+
+    </div>
+    
+
+  </div>
+
+  
+	</form>
+</body>
+</html>

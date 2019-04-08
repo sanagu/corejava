@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+  <div class="container-fluid  bg-info">
+    <img src="LOGO.PNG" class="img-fluid" alt="Responsive image">
+  </div>
+
+  <div class="container-fluid  bg-secondary">
+    <div class="card text-center bg-secondary">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="getNews?paper=toi" target="frame">Times of India</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="getNews?paper=et" target="frame">EconomicTimes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="getNews?paper=mt" target="frame">MaharatsraTimes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" name="frame" href="getNews?paper=dna" target="frame">DNA</a>
+          </li>
+        
+        </ul>
+      </div>
+
+    </div>
+    
+
+  </div>
+
+  
+	</form>
+</body>
+</html>
